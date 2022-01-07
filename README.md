@@ -3,7 +3,8 @@
 
 Day1
 - Expanding Card 
-![image](https://user-images.githubusercontent.com/97155805/148493487-45c4fa7c-543d-433d-abc7-6eab7d7f3e41.png)
-![image](https://user-images.githubusercontent.com/97155805/148493516-f26b5772-6995-42cf-b788-d06a585aacbd.png)
+
+<img width="958" alt="image" src="https://user-images.githubusercontent.com/97155805/148493714-93d31242-a94d-45f1-9bb5-370ebd79c2b1.png">
+
 
 
