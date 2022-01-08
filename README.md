@@ -10,7 +10,7 @@ Day1
 
 <img width="543" alt="image" src="https://user-images.githubusercontent.com/97155805/148505510-9f3f53d1-0cfd-4c2a-9f06-10b4d73ba0e8.png">
 
--Rotating Navigation 
+- Rotating Navigation 
 
 ![image](https://user-images.githubusercontent.com/97155805/148639841-4cfaf6b0-8e02-4d81-9587-f4af407daced.png)
 
