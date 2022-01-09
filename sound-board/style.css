@@ -13,13 +13,13 @@ body {
   justify-content: center;
   height: 100vh;
   overflow: hidden;
-  background-color: rgb(161, 100, 223);
+  background-color: rgb(223, 170, 100);
   flex-wrap: wrap;
   text-align: center;
 }
 
 .btn {
-  background-color: rebeccapurple;
+  background-color: coral;
   border-radius: 5px;
   border: none;
   color: #fff;
