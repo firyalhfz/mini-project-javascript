@@ -1,7 +1,5 @@
 #mini-project-javascript
 
-
-Day1
 - Expanding Card 
 
 <img width="958" alt="image" src="https://user-images.githubusercontent.com/97155805/148493714-93d31242-a94d-45f1-9bb5-370ebd79c2b1.png">
@@ -14,8 +12,6 @@ Day1
 
 ![image](https://user-images.githubusercontent.com/97155805/148639841-4cfaf6b0-8e02-4d81-9587-f4af407daced.png)
 
-
-Day 2
 - Hidden Search Widget
 
 https://user-images.githubusercontent.com/97155805/148639913-83bbda3e-8588-4d12-89e4-46af97d690e7.mp4
@@ -33,4 +29,6 @@ https://user-images.githubusercontent.com/97155805/148639681-b123e107-98e8-408c-
 - Form Wave
 - Sound Board
 - Dad Jokes
+- Event Keycodes
+- Faq Collapse
 
