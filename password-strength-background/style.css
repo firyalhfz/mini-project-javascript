@@ -13,7 +13,7 @@ body {
 }
 
 .background {
-  background: url('https://images.unsplash.com/photo-1556745757-8d76bdb6984b')
+  background: url('https://images.unsplash.com/photo-1544030622-5c2c58b1c463?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80')
     no-repeat center center/cover;
   position: absolute;
   top: -20px;
