@@ -43,3 +43,9 @@ https://user-images.githubusercontent.com/97155805/148639681-b123e107-98e8-408c-
 - Drawing App
 - Kinetik Loader
 - Content Placeholder
+- Sticky Navbar
+- Double Vertical Slider
+- Toast Notification
+- Github Profiles
+- Double Click Heart
+- Auto Text Effect
