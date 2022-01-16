@@ -39,3 +39,7 @@ https://user-images.githubusercontent.com/97155805/148639681-b123e107-98e8-408c-
 - Background Slider
 - Theme Clock
 - Button Ripple Effect
+- Drag and Drop
+- Drawing App
+- Kinetik Loader
+- Content Placeholder
