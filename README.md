@@ -55,3 +55,4 @@ https://user-images.githubusercontent.com/97155805/148639681-b123e107-98e8-408c-
 - Animated Countdown
 - Image Carousel
 - HoverBoard
+- Pokedex
