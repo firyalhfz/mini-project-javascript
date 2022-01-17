@@ -59,6 +59,7 @@ body {
 }
 
 /* when active there will be transition of the h3 and opacity is 1 */
+/* use transition so will be good */
 .panel.active h3 {
   opacity: 1;
   transition: opacity 0.3s ease-in 0.4s;
