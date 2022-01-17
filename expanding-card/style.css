@@ -16,11 +16,18 @@ body {
   background-color: #000 ;
 }
 
+/* flex means flex row box */
+/* width the maximum is 100 and we choose 90 */
+/* vw means viewport width */
+/* you also can read this https://stackoverflow.com/questions/31039979/css-units-what-is-the-difference-between-vh-vw-and */
 .container {
   display: flex;
   width: 90vw;
 }
 
+/* background size cover : preserve rounded corners on large screens */
+/* The flex property sets the flexible length on flexible items. */
+/* will be there is transition */
 .panel {
   background-size: cover;
   background-position: center;
@@ -35,6 +42,8 @@ body {
   -webkit-transition: all 700ms ease-in;
 }
 
+/* the condition h3 when not active */
+/* opacity 0 means will disapear */
 .panel h3 {
   font-size: 24px;
   position: absolute;
@@ -44,15 +53,19 @@ body {
   opacity: 0;
 }
 
+/* the box will be size 5 */
 .panel.active {
   flex: 5;
 }
 
+/* when active there will be transition of the h3 and opacity is 1 */
 .panel.active h3 {
   opacity: 1;
   transition: opacity 0.3s ease-in 0.4s;
 }
 
+/* this is the max width, so if the web is 480px will be appear like this
+the panel 5 and 4 will be dissapear, and container is full, 100 */
 @media (max-width: 480px) {
   .container {
     width: 100vw;
