@@ -1,8 +1,10 @@
 const progress = document.getElementById('progress')
 const prev = document.getElementById('prev')
 const next = document.getElementById('next')
+// we have to use querySelectorAll because many circles
 const circles = document.querySelectorAll('.circle')
 
+// like index, so We're going to call this current active, which is going to represent whichever one is active, which will set to one by default.
 let currentActive = 1
 
 next.addEventListener('click', () => {
