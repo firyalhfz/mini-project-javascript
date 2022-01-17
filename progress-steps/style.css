@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,500&display=swap");
 
+/* we can use this when we call many times, so its more clean! */
 :root {
   --line-border-fill: #ffbdde;
   --line-border-empty: #e0e0e0;
 }
+
 * {
   box-sizing: border-box;
 }
@@ -32,6 +34,8 @@ body {
   width: 350px;
 }
 
+/* this is the style for progress (the line) but before we click.
+content is must!! this for empty string so the line before is appear, the line that grey */
 .progress-container::before {
   content: "";
   background-color: var(--line-border-empty);
@@ -44,6 +48,11 @@ body {
   z-index: -1;
 }
 
+/* this is the style for progress (the line)
+transform: translateY(-50%) = this make the line in the middle vertically
+transition = so that will like running progress go to right 
+why the width is 0? because we will make the progress when we click, and we code in script.js
+ */
 .progress {
   background-color: var(--line-border-fill);
   position: absolute;
@@ -73,6 +82,7 @@ body {
   border-color: var(--line-border-fill);
 }
 
+/* inherit means follow the mother */
 .btn {
   background-color: var(--line-border-fill);
   color: #fff;
@@ -89,6 +99,7 @@ body {
   transform: scale(0.98);
 }
 
+/* when our cursor go to button */
 .btn:focus {
   outline: 0;
 }
