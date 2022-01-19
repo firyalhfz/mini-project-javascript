@@ -44,8 +44,10 @@ function update() {
 
     const actives = document.querySelectorAll('.active')
 
+    //this for the progress, so the line progress is always stop in the next circle
     progress.style.width = (actives.length - 1) / (circles.length - 1) * 100 + '%'
 
+    //this for setting the button when they will disabled
     if(currentActive === 1) {
         prev.disabled = true
     } else if(currentActive === circles.length) {
