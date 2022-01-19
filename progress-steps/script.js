@@ -7,9 +7,12 @@ const circles = document.querySelectorAll('.circle')
 // like index, so We're going to call this current active, which is going to represent whichever one is active, which will set to one by default.
 let currentActive = 1
 
+// when we click next, currentActive will increase
 next.addEventListener('click', () => {
     currentActive++
 
+    // if it gets to the end, it doesnt go past four, 
+    // so if we click next again when already in 4, it will not go to 5, just stop there
     if(currentActive > circles.length) {
         currentActive = circles.length
     }
@@ -17,9 +20,11 @@ next.addEventListener('click', () => {
     update()
 })
 
+//when we click prev, currentActive will decrease
 prev.addEventListener('click', () => {
     currentActive--
 
+    //so if we click prev when the currentActive already 1, it will not go to 0, -1, just stop there
     if(currentActive < 1) {
         currentActive = 1
     }
