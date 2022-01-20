@@ -64,3 +64,7 @@ https://user-images.githubusercontent.com/97155805/148639681-b123e107-98e8-408c-
 - Image Carousel
 - HoverBoard
 - Pokedex
+- Quiz App
+
+![image](https://user-images.githubusercontent.com/97155805/150362112-2755e13a-25fa-4bca-8f2b-6784399f757a.png)
+
