@@ -62,9 +62,21 @@ https://user-images.githubusercontent.com/97155805/148639681-b123e107-98e8-408c-
 - Notes App
 - Animated Countdown
 - Image Carousel
+
+![image](https://user-images.githubusercontent.com/97155805/150362349-5a006c2f-e9cf-47c1-aa57-e5b003b64632.png)
+
+
 - HoverBoard
 - Pokedex
+
+![image](https://user-images.githubusercontent.com/97155805/150362444-c19330fc-d19e-4f51-b8ec-7d93790e9982.png)
+
+
 - Quiz App
 
 ![image](https://user-images.githubusercontent.com/97155805/150362112-2755e13a-25fa-4bca-8f2b-6784399f757a.png)
+
+- Verify Account UI
+
+![image](https://user-images.githubusercontent.com/97155805/150362556-06a4fa03-05e2-49ec-b32a-8a73d930e0ae.png)
 
