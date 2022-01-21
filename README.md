@@ -80,3 +80,7 @@ https://user-images.githubusercontent.com/97155805/148639681-b123e107-98e8-408c-
 
 ![image](https://user-images.githubusercontent.com/97155805/150362556-06a4fa03-05e2-49ec-b32a-8a73d930e0ae.png)
 
+- Insect Catch Game
+- Custom Range Slider
+- Random Image Feed
+- Feedback UI Design
