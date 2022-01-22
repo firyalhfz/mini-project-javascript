@@ -84,3 +84,7 @@ https://user-images.githubusercontent.com/97155805/148639681-b123e107-98e8-408c-
 - Custom Range Slider
 - Random Image Feed
 - Feedback UI Design
+- Testimonial Box Switcher
+- Live User Filter
+- 3d Background Boxes
+- Mobile Tab Navigation
