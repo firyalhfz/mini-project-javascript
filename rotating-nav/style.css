@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+/* overflow-x hidden = so will not exceeds the limit horizontally.
+you can also read this articel https://www.kursuswebsite.org/fungsi-overflow-xhidden-pada-css/ */
 body {
   font-family: 'Lato', sans-serif;
   background-color: #333;
@@ -12,6 +14,7 @@ body {
   margin: 0;
 }
 
+/* transform-origin top left = position container origin, so will not kesamping */
 .container {
   background-color: #fafafa;
   transform-origin: top left;
@@ -21,16 +24,19 @@ body {
   padding: 50px;
 }
 
+/* this make container rotate -20deg (kesamping) */
 .container.show-nav {
   transform: rotate(-20deg);
 }
 
+/* this make circle like 1/4 */
 .circle-container {
   position: fixed;
   top: -100px;
   left: -100px;
 }
 
+/* this for show the circle */
 .circle {
   background-color: #ff7979;
   height: 200px;
@@ -44,6 +50,7 @@ body {
   transform: rotate(-70deg);
 }
 
+/* this for show the 3 lines */
 .circle button {
   cursor: pointer;
   position: absolute;
@@ -60,10 +67,12 @@ body {
   outline: none;
 }
 
+/* this for position of 3 lines */
 .circle button#open {
   left: 60%;
 }
 
+/* this for position of x */
 .circle button#close {
   top: 60%;
   transform: rotate(90deg);
