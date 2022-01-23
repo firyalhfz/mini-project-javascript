@@ -17,14 +17,17 @@ body{
 .bg{
     background: url('https://images.unsplash.com/photo-1641576369369-870158b0d11b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80') no-repeat center center/cover;
     position: absolute;
+    /* this four lines for make the background full */
     top: -30px;
     left: -30px;
     width: calc(100vw + 60px);
     height: calc(100vh + 60px);
     z-index: -1;
+    /* this make the back blur */
     filter: blur(0px);
 }
 
+/* this style for loading text */
 .loading-text{
     font-size: 50px;
     color: #fff;
