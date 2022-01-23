@@ -20,6 +20,7 @@ body {
   height: 50px;
 }
 
+/* this style will show the search when not active */
 .search .input {
   background-color: #fff;
   border: 0;
@@ -30,6 +31,7 @@ body {
   transition: width 0.3s ease;
 }
 
+/* this style fot the button */
 .btn {
   background-color: #fff;
   border: 0;
@@ -48,10 +50,12 @@ body {
   outline: none;
 }
 
+/* when active the search will expand */
 .search.active .input {
   width: 200px;
 }
 
+/* when active the button will move horizontally 198px */
 .search.active .btn {
   transform: translateX(198px);
 }
