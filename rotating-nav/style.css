@@ -79,6 +79,7 @@ body {
   transform-origin: top left;
 }
 
+/* for showing the nav and list */
 .container.show-nav + nav li {
   transform: translateX(0);
   transition-delay: 0.3s;
@@ -96,6 +97,7 @@ nav ul {
   padding-left: 30px;
 }
 
+/* style of list biar ada di dalam nav */
 nav ul li {
   text-transform: uppercase;
   color: #fff;
@@ -104,36 +106,43 @@ nav ul li {
   transition: transform 0.4s ease-in;
 }
 
+/* ini biar kebuka navnya, trus layoutnya miring */
 nav ul li i {
   font-size: 20px;
   margin-right: 10px;
 }
 
+/* ini buat list kedua, biar agak kekanan dikit */
 nav ul li + li {
   margin-left: 15px;
   transform: translateX(-150%);
 }
 
+/* ini buat list ketiga, biar agak kekanan lebih dikit */
 nav ul li + li + li {
   margin-left: 30px;
   transform: translateX(-200%);
 }
 
+/* ini style buat list tag a */
 nav a{
   color: #fafafa;
   text-decoration: none;
   transition: all 0.5s;
 }
 
+/* biar pas di hover berubah warna and bold */
 nav a:hover {
   color: #FF7979;
   font-weight: bold;
 }
 
+/* ukuran max */
 .content img {
   max-width: 100%;
 }
 
+/* ukuran max content */
 .content {
   max-width: 1000px;
   margin: 50px auto;
