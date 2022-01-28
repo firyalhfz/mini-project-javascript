@@ -23,7 +23,3 @@ function checkBoxes() {
     }
   })
 }
-
-// asjdfhasjkfn
-// nfifnsadjk
-// ndaskdnas
