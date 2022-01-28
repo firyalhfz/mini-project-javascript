@@ -32,14 +32,18 @@ h1{
     margin: 10px;
     border-radius: 10px;
     box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+    /* so its will go to out of the screen, translateX means horizontal */
     transform: translateX(400%) ;
+    /* it will move to the middle (initial) from the out of scrren horizontally */
     transition: transform 0.4s ease;
 }
 
+/* every other one. And what we'll do is instead of setting the initial, the initial transform translate X to four hundred percent, we're going to set it to negative four hundred percent, which is going to put at middle*/
 .box:nth-of-type(even){
     transform:translateX(-400%)
 }
 
+/* its mean will show in the place that should be there, (original) */
 .box.show{
     transform: translateX(0);
 }
