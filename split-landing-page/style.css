@@ -28,9 +28,11 @@ h1{
   left: 50%;
   top: 20%;
   transform: translateX(-50%);
+  /* so the text will not wraping */
   white-space: nowrap;
 }
 
+/* make button without background */
 .btn{
   position: absolute;
   display: flex;
@@ -49,11 +51,13 @@ h1{
   padding: 1.5rem;
 }
 
+/* when our cursor touch split left  */
 .split.left .btn:hover{
   background-color: var(--left-btn-hover-color);
   border-color: var(--left-btn-hover-color);
 }
 
+/* when our cursor touch split right  */
 .split.right .btn:hover{
   background-color: var(--right-btn-hover-color);
   border-color: var(--right-btn-hover-color);
@@ -74,6 +78,7 @@ h1{
 }
 
 .split.left{
+  /* it will be in left */
   left: 0;
   background: url('akatsuki.jpg');
   background-repeat: no-repeat;
@@ -110,18 +115,22 @@ h1{
   transition: all var(--speed) ease-in-out;
 }
 
+/* when our cursor touch the left side, it will make the left side become 75% width */
 .hover-left .left{
   width: var(--hover-width);
 }
 
+/* when our cursor touch the left side, it will make the right side become 25% width */
 .hover-left .right{
   width: var(--other-width);
 }
 
+/* when our cursor touch the right side, it will make the right side become 75% width */
 .hover-right .right{
   width: var(--hover-width);
 }
 
+/* when our cursor touch the right side, it will make the right side become 25% width */
 .hover-right .left{
   width: var(--other-width);
 }
