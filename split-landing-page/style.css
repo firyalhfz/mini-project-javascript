@@ -108,6 +108,7 @@ h1{
   background-color: var(--right-bg-color);
 }
 
+/* so this for the transition, we use speed 1000ms and use animation ease in out */
 .split.right,
 .split.left,
 .split.right::before,
@@ -135,6 +136,8 @@ h1{
   width: var(--other-width);
 }
 
+
+/* so when the web is 800px the h1 and the btn, will be styling like this */
 @media (max-width: 800px){
   h1{
     font-size: 2rem;
