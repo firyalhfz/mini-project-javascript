@@ -5,9 +5,9 @@ sounds.forEach(sound => {
     btn.classList.add('btn')
 
     btn.innerText = sound
+    // when click stop song and play sound accourding to what button we click
     btn.addEventListener('click', ()=> {
         stopSongs()
-
         document.getElementById(sound).play()
     })
 
