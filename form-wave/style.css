@@ -81,6 +81,7 @@ body{
     border-bottom-color: skyblue;
 }
 
+/* this make label top on line */
 .form-control label {
     position: absolute;
     top: 15px;
@@ -92,9 +93,11 @@ body{
     display: inline-block;
     font-size: 18px;
     min-width: 5px;
+    /* efek supaya kek pas kita ngeklik gitu si textnya ke atas */
     transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
+/* style for text label when we click */
 .form-control input:focus + label span, 
 .form-control input:valid + label span {
     color: skyblue; 
