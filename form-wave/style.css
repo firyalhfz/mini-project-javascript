@@ -74,6 +74,7 @@ body{
     color: #fff;
 }
 
+/* outline = 0 supaya gada garis */
 .form-control input:focus,
 .form-control input:valid{
     outline: 0;
