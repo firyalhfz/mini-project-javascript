@@ -74,6 +74,7 @@ h1 {
   display: block;
 }
 
+/* style for the toggle */
 .faq-toggle {
   background-color: transparent;
   border: 0;
@@ -91,28 +92,28 @@ h1 {
   width: 30px;
 }
 
+/* when di click gada garis2 */
 .faq-toggle:focus {
   outline: 0;
 }
 
+/* when unactive si silang tidak ada */
 .faq-toggle .fa-times {
   display: none;
 }
 
+/* when active si silang ada */
 .faq.active .faq-toggle .fa-times {
   color: #fff;
   display: block;
 }
 
-.faq.active .faq-toggle .fa-times {
-  color: #fff;
-  display: block;
-}
-
+/* when active si drop down tidak ada */
 .faq.active .faq-toggle .fa-chevron-down {
   display: none;
 }
 
+/* background toggle kalo active */
 .faq.active .faq-toggle {
   background-color: #9fa4a8;
 }
