@@ -1,5 +1,6 @@
 const insert = document.getElementById('insert')
 
+// when click one of keyboard it will show the keycode
 window.addEventListener('keydown', (event) => {
     insert.innerHTML = `
     <div class="key">
