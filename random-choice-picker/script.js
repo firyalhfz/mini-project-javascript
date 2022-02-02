@@ -16,10 +16,12 @@ textarea.addEventListener('keyup', (e) => {
 })
 
 function createTags(input) {
+    // this make tags split by coma, and cannot there is space
     const tags = input.split(",").filter((tag) => tag.trim() !== "").map((tag) => tag.trim());
     
     tagsEl.innerHTML = ''
 
+    // make tag
     tags.forEach(tag => {
       const tagEl = document.createElement('span')
       tagEl.classList.add('tag')
@@ -60,10 +62,12 @@ function pickRandomTag() {
   return tags[Math.floor(Math.random() * tags.length)]
 }
 
+// add classlist highlight
 function highlightTag(tag) {
   tag.classList.add('highlight')
 }
 
+// remove classlist highlight
 function unHighlightTag(tag) {
   tag.classList.remove('highlight')
 }
