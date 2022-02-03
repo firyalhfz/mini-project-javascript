@@ -21,6 +21,7 @@ body {
   margin: 0;
 }
 
+/* when navigation not active it will be styling like this, the size is small */
 nav {
   background-color: #fff;
   padding: 20px;
@@ -30,20 +31,24 @@ nav {
   justify-content: center;
   border-radius: 3px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  /* make transition for smooth movement */
   transition: width 0.6s linear;
   overflow-x: hidden ;
 }
 
+/* when nav is active the width is bigger */
 nav.active {
   width: 370px;
 }
 
 nav ul {
   display: flex;
+  /* this for disappear the list style */
   list-style-type: none;
   padding: 0;
   margin: 0;
   width: 0;
+  /* make transition for smooth movement */
   transition: width 0.6s linear;
 }
 
@@ -53,18 +58,23 @@ nav.active ul {
 
 nav ul li {
   transform: rotateY(0deg);
+  /* make opacity is zero so that not showing */
   opacity: 0;
+  /* make transition of opacity so that blurry slowly */
   transition: transform 0.6s linear, opacity 0.6s linear;
 }
 
 nav.active ul li {
+  /* make opacity is 1 so that showing when active */
   opacity: 1;
+  /* the list kek muter 360derajat */
   transform: rotateY(360deg);
 }
 
 nav ul a {
   position: relative;
   color: #000;
+  /* we use this fot not look like link */
   text-decoration: none;
   margin: 0 10px;
 }
@@ -72,6 +82,7 @@ nav ul a {
 .icon {
   background-color: #fff;
   border: 0;
+  /* when we hover over it, we get the cursor */
   cursor: pointer;
   padding: 0;
   position: relative;
@@ -79,12 +90,14 @@ nav ul a {
   width: 30px;
 }
 
+/* outline 0 for not showing blue line */
 .icon:focus {
   outline: 0;
 }
 
+/* this style for line  */
 .icon .line {
-  background-color: #5290f9;
+  background-color: #000;
   height: 2px;
   width: 20px;
   position: absolute;
@@ -93,16 +106,18 @@ nav ul a {
   transition: transform 0.6s linear;
 }
 
+/* this for the second line, different position */
 .icon .line2 {
   top: auto;
   bottom: 10px;
 }
 
-
+/* this for make the position of line number one change become one of the X, and using transform for make transition */
 nav.active .icon .line1 {
   transform: rotate(-765deg) translateY(5.5px);
 }
 
+/* this for make the position of line number two change become one of the X, and using transform for make transition */
 nav.active .icon .line2 {
   transform: rotate(765deg) translateY(-5.5px);
 }
