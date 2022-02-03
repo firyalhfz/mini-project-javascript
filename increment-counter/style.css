@@ -8,14 +8,18 @@ body {
   background-color: plum;
   color: #fff;
   font-family: "Roboto Mono", sans-serif;
+  /* this for making the container kesamping  */
   display: flex;
+  /* this for making the content in the middle vertically */
   align-items: center;
+  /* this for making the content in the middle horizontally */
   justify-content: center;
   height: 100vh;
   overflow: hidden;
   margin: 0;
 }
 
+/* this for making the image, text, become in the middle in every each container */
 .counter-container {
   display: flex;
   flex-direction: column;
@@ -29,6 +33,7 @@ body {
   margin-top: 10px;
 }
 
+/* if the web max-width 580px (the small size), the flex will be column, its mean vertical,  */
 @media (max-width: 580px){
   body{
     flex-direction: column;
