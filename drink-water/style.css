@@ -28,6 +28,7 @@ h3 {
   margin: 10px 0;
 }
 
+/* for the big cup */
 .cup {
   background-color: #fff;
   border: 4px solid var(--border-color);
@@ -41,11 +42,13 @@ h3 {
   overflow: hidden;
 }
 
+/* for the small cup */
 .cup.cup-small {
   height: 95px;
   width: 50px;
   border-radius: 0 0 15px 15px;
   background-color: rgba(255, 255, 255, 0.9);
+  /* this for when the cursor hover there, it will be like can be clicked */
   cursor: pointer;
   font-size: 14px;
   align-items: center;
@@ -55,11 +58,13 @@ h3 {
   transition: 0.3s ease;
 }
 
+/* when full */
 .cup.cup-small.full {
   background-color: var(--fill-color);
   color: #fff;
 }
 
+/* this make the cup become 4 4, flex and wrap */
 .cups {
   display: flex;
   flex-wrap: wrap;
@@ -68,6 +73,7 @@ h3 {
   width: 280px;
 }
 
+/* style for remained text */
 .remained {
   display: flex;
   flex-direction: column;
