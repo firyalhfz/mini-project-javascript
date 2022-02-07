@@ -18,6 +18,7 @@ async function getMovies(url) {
   showMovies(data.results);
 }
 
+// for showing movies
 function showMovies(movies) {
   main.innerHTML = "";
 
@@ -42,6 +43,7 @@ function showMovies(movies) {
   });
 }
 
+// depending on what number we get for vote
 function getClassByRate(vote) {
   if (vote >= 8) {
     return "green";
@@ -52,6 +54,7 @@ function getClassByRate(vote) {
   }
 }
 
+// for searching
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
