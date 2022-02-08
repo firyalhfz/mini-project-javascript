@@ -62,6 +62,7 @@ body::before {
   font-size: 30px;
   border: 2px solid orange;
   top: 50%;
+  /* vertically 50% */
   transform: translateY(-50%);
   cursor: pointer;
 }
@@ -70,10 +71,12 @@ body::before {
   outline: 0;
 }
 
+/* make the position in left sesuai dengan angkanya */
 .left-arrow {
   left: calc(15vw - 65px);
 }
 
+/* make the position in right sesuai dengan angkanya */
 .right-arrow {
   right: calc(15vw - 65px);
 }
