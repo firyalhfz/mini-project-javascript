@@ -75,6 +75,7 @@ img {
   margin-top: 5px;
 }
 
+/* this for the animated background that grey */
 .animated-bg {
   background-image: linear-gradient(
     to right,
@@ -87,6 +88,7 @@ img {
   animation: bgPos 1s linear infinite;
 }
 
+/* this for the animated background text that grey */
 .animated-bg-text {
   border-radius: 50px;
   display: inline-block;
@@ -95,6 +97,7 @@ img {
   width: 100%;
 }
 
+/* this for like the effect that dark grey */
 @keyframes bgPos {
   0% {
     background-position: 50% 0;
