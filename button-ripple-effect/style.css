@@ -33,6 +33,7 @@ button:focus {
   outline: none;
 }
 
+/* make the circle effect of clicked */
 button .circle {
   position: absolute;
   background-color: #fff;

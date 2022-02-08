@@ -2,6 +2,7 @@ const buttons = document.querySelectorAll(".ripple");
 
 buttons.forEach((button) => {
   button.addEventListener("click", function (e) {
+    // to get the position of where we click
     const x = e.clientX;
     const y = e.clientY;
 
