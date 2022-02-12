@@ -8,6 +8,7 @@ loveMe.addEventListener('click', (e) => {
     if(clickTime === 0) {
         clickTime = new Date().getTime()
     } else {
+        // if we click more than one time then create heart 
         if((new Date().getTime() - clickTime) < 800) {
             createHeart(e)
             clickTime = 0
@@ -22,6 +23,7 @@ const createHeart = (e) => {
     heart.classList.add('fas')
     heart.classList.add('fa-heart')
 
+    // line 26 - 33 for get the position of what we click, the position x and y
     const x = e.clientX
     const y = e.clientY
 
@@ -31,12 +33,15 @@ const createHeart = (e) => {
     const xInside = x - leftOffset
     const yInside = y - topOffset
 
+    // to put the heart where we click
     heart.style.top = `${yInside}px`
     heart.style.left = `${xInside}px`
 
     loveMe.appendChild(heart)
 
+    // for put the how many times we click 
     times.innerHTML = ++timesClicked
 
+    // delete heart every one second
     setTimeout(() => heart.remove(), 1000)
 }
