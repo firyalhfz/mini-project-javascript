@@ -10,8 +10,10 @@ const messages = [
 
 const types = ["info", "success", "error"];
 
+// when button clicked than will be run createnotification function
 button.addEventListener("click", () => createNotification());
 
+// this function for making the notification
 function createNotification(message = null, type = null) {
   const notif = document.createElement("div");
   notif.classList.add("toast");
@@ -21,11 +23,13 @@ function createNotification(message = null, type = null) {
 
   toasts.appendChild(notif);
 
+  // if already 3 sec delete the notif
   setTimeout(() => {
     notif.remove();
   }, 3000);
 }
 
+// get random message by array
 function getRandomMessage() {
   return messages[Math.floor(Math.random() * messages.length)];
 }
