@@ -37,6 +37,7 @@ body {
     0 15px 40px rgba(0, 0, 0, 0.1);
 }
 
+/* for the color of input text */
 .user-form input::placeholder {
   color: #bbb;
 }
@@ -101,6 +102,7 @@ body {
   display: inline-block;
 }
 
+/* to make responsive  */
 @media (max-width: 500px) {
   .card {
     flex-direction: column;
