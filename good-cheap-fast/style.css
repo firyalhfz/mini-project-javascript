@@ -38,10 +38,12 @@ body {
   height: 40px;
 }
 
+/* if checked then the background is purple */
 .toggle:checked + .label {
   background-color: #8e44ad;
 }
 
+/* this for make the ball */
 .ball {
   background: #fff;
   height: 34px;
@@ -52,13 +54,16 @@ body {
   left: 3px;
   align-items: center;
   justify-content: center;
+  /* the default position of ball is slideoff */
   animation: slideOff 0.3s linear forwards;
 }
 
+/* if the toogle checked then make the ball slideon and there is animation for smoothing 0.3s */
 .toggle:checked + .label .ball {
   animation: slideOn 0.3s linear forwards;
 }
 
+/* make the ball is like on, the position is on right */
 @keyframes slideOn {
   0% {
     transform: translateX(0) scale(1);
@@ -71,6 +76,7 @@ body {
   }
 }
 
+/* make the ball is like off, the position is on left */
 @keyframes slideOff {
   0% {
     transform: translateX(40px) scale(1);
