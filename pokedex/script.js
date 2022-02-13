@@ -19,12 +19,14 @@ const colors = {
 
 const main_types = Object.keys(colors)
 
+// fecth the data using async and looping because so many
 const fetchPokemons = async () => {
     for(let i = 1; i <= pokemon_count; i++) {
         await getPokemon(i)
     }
 }
 
+// get the pokemon data using id and put the data to the card
 const getPokemon = async (id) => {
     const url = `https://pokeapi.co/api/v2/pokemon/${id}`
     const res = await fetch(url)
@@ -32,6 +34,7 @@ const getPokemon = async (id) => {
     createPokemonCard(data)
 }
 
+// create pokemon card
 const createPokemonCard = (pokemon) => {
     const pokemonEl = document.createElement('div')
     pokemonEl.classList.add('pokemon')
@@ -41,10 +44,12 @@ const createPokemonCard = (pokemon) => {
 
     const poke_types = pokemon.types.map(type => type.type.name)
     const type = main_types.find(type => poke_types.indexOf(type) > -1)
+    // the color is depends on the type
     const color = colors[type]
 
     pokemonEl.style.backgroundColor = color
 
+    // put to the html
     const pokemonInnerHTML = `
     <div class="img-container">
         <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png"" alt="${name}">
