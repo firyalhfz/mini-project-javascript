@@ -41,6 +41,7 @@ body {
   transform: translateY(2px);
 }
 
+/* make the box flex and wrap, and space around, the small box is 500px */
 .boxes {
   display: flex;
   flex-wrap: wrap;
@@ -51,11 +52,13 @@ body {
   transition: 0.4s ease;
 }
 
+/* the big boxes is 600px */
 .boxes.big {
   width: 600px;
   height: 600px;
 }
 
+/* for make the transform of box, rotate 360derajat */
 .boxes.big .box {
   transform: rotateZ(360deg);
 }
@@ -70,6 +73,7 @@ body {
   transition: 0.4s ease;
 }
 
+/* this for make the box like 3d, there is somthing in right */
 .box::after {
   content: '';
   background-color: #f6e58d;
@@ -78,9 +82,11 @@ body {
   right: -15px;
   height: 100%;
   width: 15px;
+  /* for make the box like trapesium */
   transform: skewY(45deg);
 }
 
+/* this for make the box like 3d, there is somthing in bottom */
 .box::before {
   content: '';
   background-color: #f9ca24;
@@ -89,5 +95,6 @@ body {
   left: 8px;
   height: 15px;
   width: 100%;
+  /* for make the box like trapesium */
   transform: skewX(45deg);
 }
