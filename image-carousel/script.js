@@ -23,9 +23,11 @@ function changeImage() {
         idx = img.length - 1
     }
 
+    // the image will be move alone, move 500px as the length of the image and carousel
     imgs.style.transform = `translateX(${-idx * 500}px)`
 }
 
+// we have to reset the interval, we call this function on below (rightbtn.addeventlis, and leftbtn) so that if we click button next or previous it will not move by itself and crushing
 function resetInterval() {
     clearInterval(interval)
     interval = setInterval(run, 2000)
