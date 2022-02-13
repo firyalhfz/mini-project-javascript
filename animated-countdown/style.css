@@ -25,11 +25,13 @@ h4 {
   text-align: center;
 }
 
+/* hide the counter */
 .counter.hide {
   transform: translate(-50%, -50%) scale(0);
   animation: hide 0.2s ease-out;
 }
 
+/* hide the counter with animation */
 @keyframes hide {
   0% {
     transform: translate(-50%, -50%) scale(1);
@@ -53,6 +55,7 @@ h4 {
   animation: show 0.2s ease-out;
 }
 
+/* show the final with animation */
 @keyframes show {
   0% {
     transform: translate(-50%, -50%) scale(0);
