@@ -8,6 +8,7 @@ if(notes) {
 
 addBtn.addEventListener('click', () => addNewNote())
 
+// for making new note
 function addNewNote(text = '') {
     const note = document.createElement('div')
     note.classList.add('note')
@@ -30,17 +31,20 @@ function addNewNote(text = '') {
     textArea.value = text
     main.innerHTML = marked(text)
 
+    // delete the note
     deleteBtn.addEventListener('click', () => {
         note.remove()
 
         updateLS()
     })
 
+    // when edit btn clicked it will be able to edit the note
     editBtn.addEventListener('click', () => {
         main.classList.toggle('hidden')
         textArea.classList.toggle('hidden')
     })
 
+    // so can update/edit the note on textarea
     textArea.addEventListener('input', (e) => {
         const { value } = e.target
 
@@ -52,6 +56,7 @@ function addNewNote(text = '') {
     document.body.appendChild(note)
 }
 
+// for saving on local storage
 function updateLS() {
     const notesText = document.querySelectorAll('textarea')
 
