@@ -6,13 +6,16 @@ const img = document.querySelectorAll('#imgs img')
 
 let idx = 0
 
+// initial 2 sec movement
 let interval = setInterval(run, 2000)
 
+// change image and add the index
 function run() {
     idx++
     changeImage()
 }
 
+// if index is more than the lenght of 
 function changeImage() {
     if(idx > img.length - 1) {
         idx = 0
