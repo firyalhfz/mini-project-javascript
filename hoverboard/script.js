@@ -18,15 +18,15 @@ for(let i = 0; i < SQUARES; i++) {
 
 // for set the color
 function setColor(element) {
-   const color = getRandomColor()
-   element.style.background = color
-   element.style.boxShadow = `0 0 2px ${color}, 0 0 10px ${color}`
+    const color = getRandomColor()
+    element.style.background = color
+    element.style.boxShadow = `0 0 2px ${color}, 0 0 10px ${color}`
 }
 
 // remove the color
 function removeColor(element) {
-   element.style.background = '#1d1d1d'
-   element.style.boxShadow = '0 0 2px #000'
+    element.style.background = '#1d1d1d'
+    element.style.boxShadow = '0 0 2px #000'
 }
 
 // get random color
