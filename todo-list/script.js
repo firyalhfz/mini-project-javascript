@@ -17,6 +17,7 @@ form.addEventListener('submit', (e) => {
 function addTodo(todo) {
     let todoText = input.value
 
+    //add the text
     if(todo) {
         todoText = todo.text
     }
@@ -29,11 +30,13 @@ function addTodo(todo) {
 
         todoEl.innerText = todoText
 
+        // if click the todo, it will add class completed
         todoEl.addEventListener('click', () => {
             todoEl.classList.toggle('completed')
             updateLS()
         }) 
 
+        //remove todo with contextmenu = right click
         todoEl.addEventListener('contextmenu', (e) => {
             e.preventDefault()
 
@@ -41,6 +44,7 @@ function addTodo(todo) {
             updateLS()
         }) 
 
+        //to add the todo to todoElement
         todosUL.appendChild(todoEl)
 
         input.value = ''
@@ -49,6 +53,7 @@ function addTodo(todo) {
     }
 }
 
+//update to local storage
 function updateLS() {
     todosEl = document.querySelectorAll('li')
 
