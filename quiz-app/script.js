@@ -52,6 +52,7 @@ function loadQuiz() {
 
     const currentQuizData = quizData[currentQuiz]
 
+//     to put the position of question and answer depends on currentquiz
     questionEl.innerText = currentQuizData.question
     a_text.innerText = currentQuizData.a
     b_text.innerText = currentQuizData.b
@@ -59,6 +60,7 @@ function loadQuiz() {
     d_text.innerText = currentQuizData.d
 }
 
+// make every answer unchecked
 function deselectAnswers() {
     answerEls.forEach(answerEl => answerEl.checked = false)
 }
@@ -66,6 +68,7 @@ function deselectAnswers() {
 function getSelected() {
     let answer
 
+    // check the answer true or not
     answerEls.forEach(answerEl => {
         if(answerEl.checked) {
             answer = answerEl.id
@@ -78,13 +81,16 @@ function getSelected() {
 submitBtn.addEventListener('click', () => {
     const answer = getSelected()
     
+    //if answer right then add 1 score
     if(answer) {
         if(answer === quizData[currentQuiz].correct) {
             score++
         }
 
+        // and next quiz
         currentQuiz++
 
+        //if havent finish run the loadquiz, and if already finish quiz so show the h2 contains score/question that correct
         if(currentQuiz < quizData.length) {
             loadQuiz()
         } else {
