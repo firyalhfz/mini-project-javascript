@@ -88,3 +88,15 @@ https://user-images.githubusercontent.com/97155805/148639681-b123e107-98e8-408c-
 - Live User Filter
 - 3d Background Boxes
 - Mobile Tab Navigation
+- Password Strength Background
+- 3d Background Boxes
+- Verify Acc UI
+- Live User Filter
+- Feedback UI Design
+- Custom Range Slider
+- Netflix Mobile Nav
+- Quiz App
+- Testimonial Box Switcher
+- Random Image Feed
+- Todo List
+- Insect Catch Game
